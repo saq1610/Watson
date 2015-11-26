@@ -1,6 +1,6 @@
 # Watson ?
 
-Watson is basically Inbox by Gmail, but nicely packaged for your desktop with advanced fetures.
+Watson is basically Inbox by Gmail, but nicely packaged for your desktop with advanced fetures. Built entirely using Node.js, electron and web awesomeness.
 
 
 ## Installation
