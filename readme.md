@@ -25,4 +25,4 @@ $ npm start
 
 ## License
 
-MIT © [<%= name %>](<%= website %>)
+MIT © [Saqeef Iqbal](https://github.com/saq1610)
