@@ -10,7 +10,7 @@ Right now the only way to run Watson is to build from source. Packages for Windo
 *Note: Watson requires that you have a working Installation of Nodejs on your system, and that it is on your PATH.*
 
 ```
-$ git clone
+$ git clone https://github.com/saq1610/Watson.git
 $ cd Watson/
 $ npm install
 $ npm start
