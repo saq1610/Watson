@@ -14,7 +14,11 @@
   "scripts": {
     "test": "xo",
     "start": "electron .",
-    "build": "electron-packager . $npm_package_productName --out=dist --ignore='^/dist$' --prune --asar --all --version=$npm_package_electronVersion"
+    "build": "electron-packager . Watson --out=dist --ignore='^/dist$' --prune --asar --all --version=0.35.0",
+
+    "pack": "npm run pack:osx && npm run pack:win",
+    "pack:osx": "npm run build:osx && electron-builder \"dist/osx/Watson.app\" --platform=osx --out=\"dist/osx\" --config=packager.json",
+    "pack:win": "npm run build:win && electron-builder \"dist/win/Watson-win32\" --platform=win --out=\"dist/win\" --config=packager.json"
   },
   "files": [
     "index.js",
@@ -31,6 +35,7 @@
   "devDependencies": {
     "electron-packager": "^5.0.0",
     "electron-prebuilt": "^0.35.0",
+    "electron-builder": "^2.3.0",
     "xo": "^0.11.1"
   },
   "xo": {
